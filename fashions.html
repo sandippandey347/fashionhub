@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:blanchedalmond(97, 61, 95);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar-brand img {
+            border-radius: 100%;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(54, 96, 120, 0.1);
+            background-color: rgb(36, 60, 117);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+            color:whitesmoke;
+            background-color:rgb(36, 122, 197);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Product Section */
+        .card {
+            transition: transform 0.3s ease-in-out;
+            border: none;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(57, 129, 192, 0.881);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.UZp_NtjEelL5oFNqSXA26QHaHa&w=474&h=474&c=7 alt="Fashion Hub Logo" width="100" height="100" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to Fashion Hub</h1>
+        <p>Discover the latest trends in fashion</p>
+    </header>
+
+    <!-- Product Section -->
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-4">Our Collection</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1603251579431-8041402bdeda?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Shirt</h5>
+                        <p class="card-text">$25.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1715758890151-2c15d5d482aa?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Jeans</h5>
+                        <p class="card-text">$39.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/e4/92/0d/e4920d84f73b5788b456b5bdf5e850ca.jpg" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Dress</h5>
+                        <p class="card-text">$39.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHNoaXJ0fGVufDB8fDB8fHww" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirts</h5>
+                        <p class="card-text">$49.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amFja2V0fGVufDB8fDB8fHww" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Jackets</h5>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Boots</h5>
+                        <p class="card-text">$89.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2 text align="right">Payment Methods<br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Esewa_logo.webp/1200px-Esewa_logo.webp.png?20220908142913"height="70" width="70">
+            <img src="data:image/jpeg;base64,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"height="70"widht="70">
+            <img src="https://www.logo.wine/a/logo/Paytm/Paytm-Logo.wine.svg" height="70" width="70">
+            </h2>
+        <h1 text align="left">Contacts:
+            <h5 text align="left">Phone no:9840912565</h5>
+            <h5 text align="left">Email:syandip8090@gmail.com</h5>
+            </h1>
+        <h3>&copy; 2025 Fashion Hub. All Rights Reserved.</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
